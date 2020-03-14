@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* box */
+body {
+  background-color: #eee;
+}
+@keyframes x {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#yinyang {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border-radius: 200px;
+  overflow: hidden;
+  animation: x 5s infinite linear;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.75);
+}
+/* Mobile */
+@media (max-width: 500px) {
+  #yinyang {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* first child */
+#yinyang > div:first-child {
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+}
+/* second child */
+#yinyang > div:nth-child(2) {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  right: 0;
+}
+/* third child */
+#yinyang > div:nth-child(3) {
+  width: 200px;
+  height: 200px;
+  left: 50%;
+  position: absolute;
+  margin-left: -100px;
+  border-radius: 50%;
+  background-color: black;
+}
+@media(max-width:500px){
+  #yinyang > div:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+  } 
+}
+
+#yinyang > div:nth-child(4) {
+  width: 200px;
+  height: 200px;
+  left: 50%;
+  position: absolute;
+  margin-left: -100px;
+  border-radius: 50%;
+  bottom: 0;
+  background-color: white;
+}
+@media(max-width:500px){
+
+#yinyang > div:nth-child(4) {
+  width:100px;
+  height: 100px;
+  margin-left: -50px;
+}
+}
+
+#yinyang > div:nth-child(5) {
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  position: absolute;
+  margin-left: -25px;
+  border-radius: 50%;
+  top: 75px;
+  background-color: white;
+}
+@media(max-width: 500px){
+
+#yinyang > div:nth-child(5) {
+  width: 25px;
+  height: 25px;
+  margin-left: -12.5px;
+  top: 37.5px;
+}
+
+#yinyang > div:nth-child(6) {
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  position: absolute;
+  margin-left: -25px;
+  bottom: 75px;
+  border-radius: 50%;
+  /* top: 250px; */
+  background-color: black;
+}
+@media (max-width: 500px) {
+  #yinyang > div:nth-child(6) {
+    width: 25px;
+    height: 25px;
+    margin-left: -12.5px;
+    bottom: 37.5px;
+  }
+}
+#yinyang-wrapper {
+  border: 1px solid red;
+  height: 100vh;
+  /* 宽度自适应 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#yinyang-description {
+  margin-top: 1em;
+}
