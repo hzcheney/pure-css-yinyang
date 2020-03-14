@@ -59,12 +59,12 @@ body {
   border-radius: 50%;
   background-color: black;
 }
-@media(max-width:500px){
+@media (max-width: 500px) {
   #yinyang > div:nth-child(3) {
     width: 100px;
     height: 100px;
     margin-left: -50px;
-  } 
+  }
 }
 
 #yinyang > div:nth-child(4) {
@@ -77,13 +77,12 @@ body {
   bottom: 0;
   background-color: white;
 }
-@media(max-width:500px){
-
-#yinyang > div:nth-child(4) {
-  width:100px;
-  height: 100px;
-  margin-left: -50px;
-}
+@media (max-width: 500px) {
+  #yinyang > div:nth-child(4) {
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+  }
 }
 
 #yinyang > div:nth-child(5) {
@@ -96,15 +95,14 @@ body {
   top: 75px;
   background-color: white;
 }
-@media(max-width: 500px){
-
-#yinyang > div:nth-child(5) {
-  width: 25px;
-  height: 25px;
-  margin-left: -12.5px;
-  top: 37.5px;
+@media (max-width: 500px) {
+  #yinyang > div:nth-child(5) {
+    width: 25px;
+    height: 25px;
+    margin-left: -12.5px;
+    top: 37.5px;
+  }
 }
-
 #yinyang > div:nth-child(6) {
   width: 50px;
   height: 50px;
@@ -125,7 +123,6 @@ body {
   }
 }
 #yinyang-wrapper {
-  border: 1px solid red;
   height: 100vh;
   /* 宽度自适应 */
   display: flex;
